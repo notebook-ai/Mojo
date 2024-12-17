@@ -1,0 +1,19 @@
+
+; install magic
+> sudo curl -ssL https://magic.modular.com/6a47286d-1784-44f7-9d21-f292b7517b78 | bash
+
+; create a new project
+> magic init hello-world --format mojoproject
+
+; create a mojo file
+> touch say_hello.mojo
+
+; open the mojo file and wirte some code into the file
+> vim say_hello.mojo
+
+; run a mojo file
+> mojo say_hello.mojo
+
+; build an executable binary
+> mojo build say_hello.mojo
+> ./say_hello
